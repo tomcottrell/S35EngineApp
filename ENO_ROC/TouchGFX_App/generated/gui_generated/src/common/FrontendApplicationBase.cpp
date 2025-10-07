@@ -21,6 +21,8 @@
 #include <gui/screensystem_screen/ScreenSystemPresenter.hpp>
 #include <gui/screenpdm_screen/ScreenPDMView.hpp>
 #include <gui/screenpdm_screen/ScreenPDMPresenter.hpp>
+#include <gui/screeneng_screen/ScreenENGView.hpp>
+#include <gui/screeneng_screen/ScreenENGPresenter.hpp>
 #include <gui/screenlcdtest_screen/ScreenLCDtestView.hpp>
 #include <gui/screenlcdtest_screen/ScreenLCDtestPresenter.hpp>
 
@@ -78,6 +80,17 @@ void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionSouth()
 void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionSouthImpl()
 {
     touchgfx::makeTransition<ScreenCANtestView, ScreenCANtestPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<ScreenCANtestView, ScreenCANtestPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ScreenInputsTest

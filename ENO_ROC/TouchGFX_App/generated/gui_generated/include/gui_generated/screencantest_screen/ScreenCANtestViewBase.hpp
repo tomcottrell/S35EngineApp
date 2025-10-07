@@ -48,6 +48,7 @@ protected:
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea1_1;
     touchgfx::TextArea textArea1_1_1;
+    touchgfx::TextArea textArea1_1_1_1;
     touchgfx::BoxWithBorder boxWithBorder1;
     touchgfx::BoxWithBorder boxWithBorder1_1;
     touchgfx::BoxWithBorder boxWithBorder1_2;

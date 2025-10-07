@@ -351,6 +351,17 @@
             "AutoSize": true
           },
           {
+            "Type": "TextArea",
+            "Name": "textArea1_1_1_1",
+            "X": 263,
+            "Y": 219,
+            "Width": 34,
+            "Height": 19,
+            "TextId": "__SingleUse_ADQC",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
             "Type": "BoxWithBorder",
             "Name": "boxWithBorder1",
             "Width": 160,
@@ -665,7 +676,7 @@
             }
           },
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "PDMPage",
             "Trigger": {
               "Type": "TriggerPhysicalButtonClicked",
               "ButtonKey": 2
@@ -674,6 +685,17 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "ScreenPDM"
+            }
+          },
+          {
+            "InteractionName": "ENG",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone"
             }
           }
         ],
@@ -1648,7 +1670,7 @@
             "Name": "textExit1",
             "X": 174,
             "Y": 203,
-            "Width": 67,
+            "Width": 58,
             "Height": 38,
             "TextId": "__SingleUse_IC2P",
             "TextRotation": "0",
@@ -2118,6 +2140,136 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "updateD011"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "buttonHandler",
+            "Description": "Handles button presses",
+            "HasValue": true,
+            "ValueType": "uint8_t"
+          }
+        ]
+      },
+      {
+        "Name": "ScreenENG",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 320,
+            "Height": 240,
+            "LockPosition": true,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Button",
+            "Name": "button0",
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 80,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button2",
+            "X": 160,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button3",
+            "X": 240,
+            "Y": 216,
+            "Width": 80,
+            "Height": 24,
+            "Pressed": "Button_grey.png",
+            "Released": "Button_grey.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textExit",
+            "X": 21,
+            "Y": 219,
+            "Width": 38,
+            "Height": 19,
+            "TextId": "__SingleUse_T897",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textFrequency",
+            "Y": 51,
+            "Width": 222,
+            "Height": 25,
+            "TextId": "__SingleUse_X0XW",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_D62E",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textState",
+            "Y": 26,
+            "Width": 222,
+            "Height": 25,
+            "TextId": "__SingleUse_0BJ4",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_5LPQ",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAction",
+            "Width": 222,
+            "Height": 25,
+            "TextId": "__SingleUse_0S7E",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZER1",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "CANPage",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "ScreenCANtest"
             }
           }
         ],

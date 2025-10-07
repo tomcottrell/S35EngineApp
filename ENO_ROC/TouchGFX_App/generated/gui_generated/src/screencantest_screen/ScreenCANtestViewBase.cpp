@@ -50,6 +50,12 @@ ScreenCANtestViewBase::ScreenCANtestViewBase()
     textArea1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_28RV));
     add(textArea1_1_1);
 
+    textArea1_1_1_1.setXY(263, 219);
+    textArea1_1_1_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea1_1_1_1.setLinespacing(0);
+    textArea1_1_1_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ADQC));
+    add(textArea1_1_1_1);
+
     boxWithBorder1.setPosition(0, 0, 160, 75);
     boxWithBorder1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     boxWithBorder1.setBorderColor(touchgfx::Color::getColorFromRGB(180, 180, 180));
@@ -230,7 +236,7 @@ void ScreenCANtestViewBase::handleKeyEvent(uint8_t key)
 
     if(2 == key)
     {
-        //Interaction1
+        //PDMPage
         //When hardware button 2 clicked change screen to ScreenPDM
         //Go to ScreenPDM with no screen transition
         application().gotoScreenPDMScreenNoTransition();

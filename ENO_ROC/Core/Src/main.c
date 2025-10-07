@@ -43,6 +43,7 @@
 
 #include "SystemHealthManager.h"
 #include "pdm.h"
+#include "Engine_App.h"
 
 /* USER CODE END Includes */
 
@@ -1204,6 +1205,9 @@ void StartDefaultTask(void *argument)
 
    		//PDM communications
    		PDM_comms();
+
+   		//Engine App
+   		engine_app();
 
    		//Digital output control
    		digital_output_control();

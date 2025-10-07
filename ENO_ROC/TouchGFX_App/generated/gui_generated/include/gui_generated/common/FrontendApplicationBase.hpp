@@ -28,6 +28,8 @@ public:
 
     void gotoScreenCANtestScreenSlideTransitionSouth();
 
+    void gotoScreenCANtestScreenSlideTransitionEast();
+
     // ScreenInputsTest
     void gotoScreenInputsTestScreenNoTransition();
 
@@ -55,6 +57,8 @@ protected:
     void gotoScreenCANtestScreenNoTransitionImpl();
 
     void gotoScreenCANtestScreenSlideTransitionSouthImpl();
+
+    void gotoScreenCANtestScreenSlideTransitionEastImpl();
 
     // ScreenInputsTest
     void gotoScreenInputsTestScreenNoTransitionImpl();

@@ -26,6 +26,8 @@
 #include <gui/screensystem_screen/ScreenSystemPresenter.hpp>
 #include <gui/screenpdm_screen/ScreenPDMView.hpp>
 #include <gui/screenpdm_screen/ScreenPDMPresenter.hpp>
+#include <gui/screeneng_screen/ScreenENGView.hpp>
+#include <gui/screeneng_screen/ScreenENGPresenter.hpp>
 #include <gui/screenlcdtest_screen/ScreenLCDtestView.hpp>
 #include <gui/screenlcdtest_screen/ScreenLCDtestPresenter.hpp>
 
@@ -56,8 +58,9 @@ public:
             touchgfx::meta::TypeList< ScreenOutputsTestView,
             touchgfx::meta::TypeList< ScreenSystemView,
             touchgfx::meta::TypeList< ScreenPDMView,
+            touchgfx::meta::TypeList< ScreenENGView,
             touchgfx::meta::TypeList< ScreenLCDtestView,
-            touchgfx::meta::Nil > > > > > >
+            touchgfx::meta::Nil > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -75,8 +78,9 @@ public:
             touchgfx::meta::TypeList< ScreenOutputsTestPresenter,
             touchgfx::meta::TypeList< ScreenSystemPresenter,
             touchgfx::meta::TypeList< ScreenPDMPresenter,
+            touchgfx::meta::TypeList< ScreenENGPresenter,
             touchgfx::meta::TypeList< ScreenLCDtestPresenter,
-            touchgfx::meta::Nil > > > > > >
+            touchgfx::meta::Nil > > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -90,7 +94,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
             touchgfx::meta::TypeList< SlideTransition<SOUTH>,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

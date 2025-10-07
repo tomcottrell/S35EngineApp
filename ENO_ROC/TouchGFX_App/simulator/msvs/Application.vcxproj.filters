@@ -268,6 +268,18 @@
     <Filter Include="Source Files\generated\gui_generated\screenpdm_screen">
       <UniqueIdentifier>E7423D23-ABA6-5707-F86C-1DA958D8D1A9</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\screeneng_screen">
+      <UniqueIdentifier>15D01AE0-310C-79B2-7A6C-82D25823464B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\screeneng_screen">
+      <UniqueIdentifier>AEDFED74-6082-A99D-29A2-DDC9D0A76DD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\screeneng_screen">
+      <UniqueIdentifier>45C6C48C-B4D7-0FD9-5ACA-1F5D16DF004C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\screeneng_screen">
+      <UniqueIdentifier>F2D2DD1A-018F-A764-EC8A-6A6FF237B3BF</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -368,6 +380,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screenpdm_screen\ScreenPDMViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screenpdm_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screeneng_screen\ScreenENGPresenter.cpp">
+      <Filter>Source Files\gui\screeneng_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\screeneng_screen\ScreenENGView.cpp">
+      <Filter>Source Files\gui\screeneng_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\screeneng_screen\ScreenENGViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\screeneng_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -879,6 +900,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screenpdm_screen\ScreenPDMViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screenpdm_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screeneng_screen\ScreenENGPresenter.hpp">
+      <Filter>Header Files\gui\screeneng_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\screeneng_screen\ScreenENGView.hpp">
+      <Filter>Header Files\gui\screeneng_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screeneng_screen\ScreenENGViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\screeneng_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
