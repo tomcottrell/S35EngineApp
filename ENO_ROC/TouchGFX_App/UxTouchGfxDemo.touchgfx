@@ -688,14 +688,15 @@
             }
           },
           {
-            "InteractionName": "ENG",
+            "InteractionName": "Eng1",
             "Trigger": {
               "Type": "TriggerPhysicalButtonClicked",
               "ButtonKey": 3
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone"
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ScreenENG"
             }
           }
         ],
@@ -2267,8 +2268,7 @@
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionSlide",
-              "ScreenTransitionDirection": "East",
+              "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "ScreenCANtest"
             }
           }

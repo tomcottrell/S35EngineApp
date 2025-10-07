@@ -6,19 +6,19 @@
 
 // PDM States
 typedef enum {
-    STOPPED,
-    STANDBY,
-    CRANK,
-	CRANK_REST,
-	RUNNING,
-	SPINDOWN
+    STOPPED, 		//0
+    STANDBY,		//1
+    CRANK,			//2
+	CRANK_REST,		//3
+	RUNNING,		//4
+	SPINDOWN		//5
 } engine_state_t;
 
 typedef enum {
-    START,
-    STOP,
-    EMERGENCY_STOP,
-	NO_ACTION
+    START,			//0
+    STOP,			//1
+    EMERGENCY_STOP,	//2
+	NO_ACTION		//3
 } engine_action_t;
 
 // External variables for UI access

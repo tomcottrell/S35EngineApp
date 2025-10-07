@@ -242,4 +242,13 @@ void ScreenCANtestViewBase::handleKeyEvent(uint8_t key)
         application().gotoScreenPDMScreenNoTransition();
     
     }
+
+    if(3 == key)
+    {
+        //Eng1
+        //When hardware button 3 clicked change screen to ScreenENG
+        //Go to ScreenENG with no screen transition
+        application().gotoScreenENGScreenNoTransition();
+    
+    }
 }

@@ -82,17 +82,6 @@ void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionSouthImpl()
     touchgfx::makeTransition<ScreenCANtestView, ScreenCANtestPresenter, touchgfx::SlideTransition<SOUTH>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEast()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEastImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreenCANtestScreenSlideTransitionEastImpl()
-{
-    touchgfx::makeTransition<ScreenCANtestView, ScreenCANtestPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
 // ScreenInputsTest
 
 void FrontendApplicationBase::gotoScreenInputsTestScreenNoTransition()
@@ -143,6 +132,19 @@ void FrontendApplicationBase::gotoScreenPDMScreenNoTransition()
 void FrontendApplicationBase::gotoScreenPDMScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<ScreenPDMView, ScreenPDMPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// ScreenENG
+
+void FrontendApplicationBase::gotoScreenENGScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreenENGScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoScreenENGScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<ScreenENGView, ScreenENGPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // ScreenLCDtest

@@ -28,8 +28,6 @@ public:
 
     void gotoScreenCANtestScreenSlideTransitionSouth();
 
-    void gotoScreenCANtestScreenSlideTransitionEast();
-
     // ScreenInputsTest
     void gotoScreenInputsTestScreenNoTransition();
 
@@ -41,6 +39,9 @@ public:
 
     // ScreenPDM
     void gotoScreenPDMScreenNoTransition();
+
+    // ScreenENG
+    void gotoScreenENGScreenNoTransition();
 
     // ScreenLCDtest
     void gotoScreenLCDtestScreenNoTransition();
@@ -58,8 +59,6 @@ protected:
 
     void gotoScreenCANtestScreenSlideTransitionSouthImpl();
 
-    void gotoScreenCANtestScreenSlideTransitionEastImpl();
-
     // ScreenInputsTest
     void gotoScreenInputsTestScreenNoTransitionImpl();
 
@@ -71,6 +70,9 @@ protected:
 
     // ScreenPDM
     void gotoScreenPDMScreenNoTransitionImpl();
+
+    // ScreenENG
+    void gotoScreenENGScreenNoTransitionImpl();
 
     // ScreenLCDtest
     void gotoScreenLCDtestScreenNoTransitionImpl();

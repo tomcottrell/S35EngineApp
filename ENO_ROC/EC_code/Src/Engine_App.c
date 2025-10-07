@@ -8,7 +8,7 @@
 #include <string.h>
 
 engine_state_t engine_state = STOPPED;
-pdm_state_t pdm_state;
+engine_action_t engine_action = NO_ACTION;
 
 
 void engine_app()
@@ -42,7 +42,7 @@ void engine_app()
 // ============================================================================
 void Stopped()
 {
-	if(frequency > 1)
+	if((frequency > 600) && (frequency != 0xFFFF))
 	{
 		engine_state = RUNNING;
 	}
@@ -59,7 +59,7 @@ void Crank()
 // ============================================================================
 void Running()
 {
-	if(frequency < 1)
+	if((frequency < 600) || (frequency == 0xFFFF))
 	{
 		engine_state = STOPPED;
 	}

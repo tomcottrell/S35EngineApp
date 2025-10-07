@@ -79,8 +79,8 @@ void ScreenENGViewBase::handleKeyEvent(uint8_t key)
     {
         //CANPage
         //When hardware button 0 clicked change screen to ScreenCANtest
-        //Go to ScreenCANtest with screen transition towards East
-        application().gotoScreenCANtestScreenSlideTransitionEast();
+        //Go to ScreenCANtest with no screen transition
+        application().gotoScreenCANtestScreenNoTransition();
     
     }
 }
