@@ -12,14 +12,14 @@ uint16_t Crank_Time = 10000; //10 seconds
 uint16_t Crank_Speed_Signal_Wait_Time = 5000; //5 seconds
 uint16_t Crank_Rest_Time = 5000; // 5 seconds
 uint8_t  Crank_Attempts = 0;
-uint8_t  Set_Crank_Attempts = 1;
+uint8_t  Set_Crank_Attempts = 3;
 uint32_t slush_start_time = 0;
 
 engine_state_t engine_state = STOPPED;
 engine_action_t engine_action = NO_ACTION;
 
-extern bool Output1_control;
-extern bool Output2_control;
+bool CRANK;
+bool FUEL;
 
 void engine_app()
 {
@@ -82,12 +82,12 @@ void Stopped()
 // ============================================================================
 void Crank()
 {
-	Output1_control = 1; //CRANK
-	Output2_control = 1; //FUEL
+	CRANK = 1; //CRANK
+	FUEL = 1; //FUEL
 	// Can add speed signal count as well
 	if(frequency > Crank_Disconnect)
 	{
-		Output1_control = 0; //CRANK
+		CRANK = 0; //CRANK
 		engine_action = NO_ACTION;
 		engine_state = RUNNING;
 	}
@@ -99,8 +99,8 @@ void Crank()
 		}
 		else
 		{
-			Output1_control = 0; //CRANK
-			Output2_control = 0; //FUEL
+			CRANK = 0; //CRANK
+			FUEL = 0; //FUEL
 			Crank_Attempts = Crank_Attempts + 1;
 			engine_state = CRANK_REST;
 			slush_start_time = HAL_GetTick();
@@ -186,8 +186,8 @@ void Running()
 // ============================================================================
 void Spindown()
 {
-	Output1_control = 0; //CRANK
-	Output2_control = 0; //FUEL
+	CRANK = 0; //CRANK
+	FUEL = 0; //FUEL
 	if(frequency > 0)
 	{
 		slush_start_time = HAL_GetTick();

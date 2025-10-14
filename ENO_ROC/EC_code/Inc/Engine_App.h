@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
+
 // PDM States
 typedef enum {
 	INITIALISATION, //0
@@ -26,6 +27,8 @@ typedef enum {
 extern engine_state_t engine_state;
 extern engine_action_t engine_action;
 extern uint8_t  Crank_Attempts;
+extern bool CRANK;
+extern bool FUEL;
 
 // Function declarations
 void engine_app(void);
