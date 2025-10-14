@@ -64,5 +64,5 @@ void process_frequency_measurement()
 	if(frequency_valid)
 		frequency = (19.68e6 / freq_timer);
 	else
-		frequency = 0xFFFF;
+		frequency = 0; //use to be 0xFFFF
 }

@@ -14,6 +14,11 @@ public:
     virtual void tearDownScreen();
     virtual void buttonHandler(uint8_t value);
     virtual void handleTickEvent();
+    virtual void Start();
+    virtual void Stop();
+    const char* engine_state_to_string();
+    const char* engine_action_to_string();
+
 protected:
     ButtonHandler buttonHandlerObj;
 };

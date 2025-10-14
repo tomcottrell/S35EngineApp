@@ -29,6 +29,18 @@ public:
     }
     
 
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void Stop()
+    {
+        // Override and implement this function in ScreenENG
+    }
+    virtual void Start()
+    {
+        // Override and implement this function in ScreenENG
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -44,7 +56,12 @@ protected:
     touchgfx::Button button2;
     touchgfx::Button button3;
     touchgfx::TextArea textExit;
+    touchgfx::TextArea textStop;
+    touchgfx::TextArea textStart;
     touchgfx::TextAreaWithOneWildcard textFrequency;
+    touchgfx::TextAreaWithOneWildcard textFuel;
+    touchgfx::TextAreaWithOneWildcard textCrank;
+    touchgfx::TextAreaWithOneWildcard textCrankAttempts;
     touchgfx::TextAreaWithOneWildcard textState;
     touchgfx::TextAreaWithOneWildcard textAction;
 
@@ -53,6 +70,12 @@ protected:
      */
     static const uint16_t TEXTFREQUENCY_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textFrequencyBuffer[TEXTFREQUENCY_SIZE];
+    static const uint16_t TEXTFUEL_SIZE = 15;
+    touchgfx::Unicode::UnicodeChar textFuelBuffer[TEXTFUEL_SIZE];
+    static const uint16_t TEXTCRANK_SIZE = 15;
+    touchgfx::Unicode::UnicodeChar textCrankBuffer[TEXTCRANK_SIZE];
+    static const uint16_t TEXTCRANKATTEMPTS_SIZE = 15;
+    touchgfx::Unicode::UnicodeChar textCrankAttemptsBuffer[TEXTCRANKATTEMPTS_SIZE];
     static const uint16_t TEXTSTATE_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textStateBuffer[TEXTSTATE_SIZE];
     static const uint16_t TEXTACTION_SIZE = 15;

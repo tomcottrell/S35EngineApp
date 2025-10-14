@@ -2220,8 +2220,30 @@
           },
           {
             "Type": "TextArea",
+            "Name": "textStop",
+            "X": 178,
+            "Y": 219,
+            "Width": 44,
+            "Height": 19,
+            "TextId": "__SingleUse_VR2H",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textStart",
+            "X": 254,
+            "Y": 219,
+            "Width": 52,
+            "Height": 19,
+            "TextId": "__SingleUse_E2TO",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
             "Name": "textFrequency",
-            "Y": 51,
+            "Y": 50,
             "Width": 222,
             "Height": 25,
             "TextId": "__SingleUse_X0XW",
@@ -2234,10 +2256,52 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textState",
-            "Y": 26,
+            "Name": "textFuel",
+            "Y": 75,
             "Width": 222,
             "Height": 25,
+            "TextId": "__SingleUse_0RM5",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_D4OJ",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textCrank",
+            "Y": 100,
+            "Width": 222,
+            "Height": 25,
+            "TextId": "__SingleUse_3UWQ",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_SUHZ",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textCrankAttempts",
+            "Y": 125,
+            "Width": 222,
+            "Height": 25,
+            "TextId": "__SingleUse_GZ6Z",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_2IFY",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textState",
+            "Y": 25,
+            "Width": 292,
+            "Height": 26,
             "TextId": "__SingleUse_0BJ4",
             "TextRotation": "0",
             "Wildcard1": {
@@ -2249,7 +2313,7 @@
           {
             "Type": "TextArea",
             "Name": "textAction",
-            "Width": 222,
+            "Width": 292,
             "Height": 25,
             "TextId": "__SingleUse_0S7E",
             "TextRotation": "0",
@@ -2270,6 +2334,28 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "ScreenCANtest"
+            }
+          },
+          {
+            "InteractionName": "STOP",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 2
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Stop"
+            }
+          },
+          {
+            "InteractionName": "START",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 3
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "Start"
             }
           }
         ],

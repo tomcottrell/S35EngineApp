@@ -38,7 +38,19 @@ ScreenENGViewBase::ScreenENGViewBase()
     textExit.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T897));
     add(textExit);
 
-    textFrequency.setPosition(0, 51, 222, 25);
+    textStop.setXY(178, 219);
+    textStop.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textStop.setLinespacing(0);
+    textStop.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VR2H));
+    add(textStop);
+
+    textStart.setXY(254, 219);
+    textStart.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textStart.setLinespacing(0);
+    textStart.setTypedText(touchgfx::TypedText(T___SINGLEUSE_E2TO));
+    add(textStart);
+
+    textFrequency.setPosition(0, 50, 222, 25);
     textFrequency.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textFrequency.setLinespacing(0);
     Unicode::snprintf(textFrequencyBuffer, TEXTFREQUENCY_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_D62E).getText());
@@ -46,7 +58,31 @@ ScreenENGViewBase::ScreenENGViewBase()
     textFrequency.setTypedText(touchgfx::TypedText(T___SINGLEUSE_X0XW));
     add(textFrequency);
 
-    textState.setPosition(0, 26, 222, 25);
+    textFuel.setPosition(0, 75, 222, 25);
+    textFuel.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textFuel.setLinespacing(0);
+    Unicode::snprintf(textFuelBuffer, TEXTFUEL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_D4OJ).getText());
+    textFuel.setWildcard(textFuelBuffer);
+    textFuel.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0RM5));
+    add(textFuel);
+
+    textCrank.setPosition(0, 100, 222, 25);
+    textCrank.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textCrank.setLinespacing(0);
+    Unicode::snprintf(textCrankBuffer, TEXTCRANK_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_SUHZ).getText());
+    textCrank.setWildcard(textCrankBuffer);
+    textCrank.setTypedText(touchgfx::TypedText(T___SINGLEUSE_3UWQ));
+    add(textCrank);
+
+    textCrankAttempts.setPosition(0, 125, 222, 25);
+    textCrankAttempts.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textCrankAttempts.setLinespacing(0);
+    Unicode::snprintf(textCrankAttemptsBuffer, TEXTCRANKATTEMPTS_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_2IFY).getText());
+    textCrankAttempts.setWildcard(textCrankAttemptsBuffer);
+    textCrankAttempts.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GZ6Z));
+    add(textCrankAttempts);
+
+    textState.setPosition(0, 25, 292, 26);
     textState.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textState.setLinespacing(0);
     Unicode::snprintf(textStateBuffer, TEXTSTATE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_5LPQ).getText());
@@ -54,7 +90,7 @@ ScreenENGViewBase::ScreenENGViewBase()
     textState.setTypedText(touchgfx::TypedText(T___SINGLEUSE_0BJ4));
     add(textState);
 
-    textAction.setPosition(0, 0, 222, 25);
+    textAction.setPosition(0, 0, 292, 25);
     textAction.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textAction.setLinespacing(0);
     Unicode::snprintf(textActionBuffer, TEXTACTION_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_ZER1).getText());
@@ -81,6 +117,24 @@ void ScreenENGViewBase::handleKeyEvent(uint8_t key)
         //When hardware button 0 clicked change screen to ScreenCANtest
         //Go to ScreenCANtest with no screen transition
         application().gotoScreenCANtestScreenNoTransition();
+    
+    }
+
+    if(2 == key)
+    {
+        //STOP
+        //When hardware button 2 clicked call virtual function
+        //Call Stop
+        Stop();
+    
+    }
+
+    if(3 == key)
+    {
+        //START
+        //When hardware button 3 clicked call virtual function
+        //Call Start
+        Start();
     
     }
 }

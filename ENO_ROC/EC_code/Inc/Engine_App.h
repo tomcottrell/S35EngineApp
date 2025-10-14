@@ -6,12 +6,13 @@
 
 // PDM States
 typedef enum {
-    STOPPED, 		//0
-    STANDBY,		//1
-    CRANK,			//2
-	CRANK_REST,		//3
-	RUNNING,		//4
-	SPINDOWN		//5
+	INITIALISATION, //0
+	STOPPED, 		//1
+    STANDBY,		//2
+    CRANK,			//3
+	CRANK_REST,		//4
+	RUNNING,		//5
+	SPINDOWN		//6
 } engine_state_t;
 
 typedef enum {
@@ -24,6 +25,7 @@ typedef enum {
 // External variables for UI access
 extern engine_state_t engine_state;
 extern engine_action_t engine_action;
+extern uint8_t  Crank_Attempts;
 
 // Function declarations
 void engine_app(void);
@@ -33,6 +35,7 @@ void Crank(void);
 void Crank_Rest(void);
 void Running(void);
 void Spindown(void);
+void Stop_Check(void);
 void Null(void);
 
 #endif
