@@ -2298,6 +2298,20 @@
           },
           {
             "Type": "TextArea",
+            "Name": "textError",
+            "Y": 150,
+            "Width": 320,
+            "Height": 25,
+            "TextId": "__SingleUse_TYIX",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_KCY4",
+              "UseBuffer": true,
+              "BufferSize": 30
+            }
+          },
+          {
+            "Type": "TextArea",
             "Name": "textState",
             "Y": 25,
             "Width": 292,

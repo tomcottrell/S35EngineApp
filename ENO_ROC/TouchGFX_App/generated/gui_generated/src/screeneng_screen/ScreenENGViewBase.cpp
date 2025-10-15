@@ -82,6 +82,14 @@ ScreenENGViewBase::ScreenENGViewBase()
     textCrankAttempts.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GZ6Z));
     add(textCrankAttempts);
 
+    textError.setPosition(0, 150, 320, 25);
+    textError.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textError.setLinespacing(0);
+    Unicode::snprintf(textErrorBuffer, TEXTERROR_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KCY4).getText());
+    textError.setWildcard(textErrorBuffer);
+    textError.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TYIX));
+    add(textError);
+
     textState.setPosition(0, 25, 292, 26);
     textState.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textState.setLinespacing(0);

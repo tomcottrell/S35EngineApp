@@ -2,8 +2,7 @@
 #include "Engine_App.h"
 
 extern uint16_t frequency;
-extern bool Output1_control;
-extern bool Output2_control;
+
 
 ScreenENGView::ScreenENGView():
 		buttonHandlerObj(10, 	static_cast<Button*>(&button0),
@@ -66,9 +65,10 @@ void ScreenENGView::handleTickEvent()
 		Unicode::snprintf(textFrequencyBuffer,TEXTFREQUENCY_SIZE, "----");
 	}
 
-	Unicode::snprintf(textFuelBuffer,TEXTFUEL_SIZE, "%d", Output2_control);
-	Unicode::snprintf(textCrankBuffer,TEXTCRANK_SIZE, "%d", Output1_control);
+	Unicode::snprintf(textFuelBuffer,TEXTFUEL_SIZE, "%d", FUEL);
+	Unicode::snprintf(textCrankBuffer,TEXTCRANK_SIZE, "%d", CRANK);
 	Unicode::snprintf(textCrankAttemptsBuffer,TEXTCRANKATTEMPTS_SIZE, "%d", Crank_Attempts);
+	Unicode::strncpy(textErrorBuffer, engine_error, TEXTERROR_SIZE);
 
 	if(++loop_count > 19)
 		{
@@ -84,7 +84,7 @@ const char* ScreenENGView::engine_state_to_string()
     {
         case STOPPED: return "STOPPED";
         case STANDBY: return "STANDBY";
-        case CRANK: return "CRANK";
+        case CRANKING: return "CRANKING";
         case CRANK_REST: return "CRANK_REST";
         case RUNNING: return "RUNNING";
         case SPINDOWN: return "SPINDOWN";

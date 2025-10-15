@@ -18,6 +18,8 @@ enum TEXTS
     T_I2,
     T_I1,
     T_I0,
+    T___SINGLEUSE_KCY4,
+    T___SINGLEUSE_TYIX,
     T___SINGLEUSE_2IFY,
     T___SINGLEUSE_GZ6Z,
     T___SINGLEUSE_SUHZ,

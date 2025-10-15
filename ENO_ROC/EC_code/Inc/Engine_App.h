@@ -10,7 +10,7 @@ typedef enum {
 	INITIALISATION, //0
 	STOPPED, 		//1
     STANDBY,		//2
-    CRANK,			//3
+    CRANKING,		//3
 	CRANK_REST,		//4
 	RUNNING,		//5
 	SPINDOWN		//6
@@ -29,6 +29,7 @@ extern engine_action_t engine_action;
 extern uint8_t  Crank_Attempts;
 extern bool CRANK;
 extern bool FUEL;
+extern const char* engine_error;
 
 // Function declarations
 void engine_app(void);

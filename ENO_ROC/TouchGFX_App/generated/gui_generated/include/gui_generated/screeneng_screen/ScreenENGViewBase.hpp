@@ -62,6 +62,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard textFuel;
     touchgfx::TextAreaWithOneWildcard textCrank;
     touchgfx::TextAreaWithOneWildcard textCrankAttempts;
+    touchgfx::TextAreaWithOneWildcard textError;
     touchgfx::TextAreaWithOneWildcard textState;
     touchgfx::TextAreaWithOneWildcard textAction;
 
@@ -76,6 +77,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textCrankBuffer[TEXTCRANK_SIZE];
     static const uint16_t TEXTCRANKATTEMPTS_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textCrankAttemptsBuffer[TEXTCRANKATTEMPTS_SIZE];
+    static const uint16_t TEXTERROR_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar textErrorBuffer[TEXTERROR_SIZE];
     static const uint16_t TEXTSTATE_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textStateBuffer[TEXTSTATE_SIZE];
     static const uint16_t TEXTACTION_SIZE = 15;

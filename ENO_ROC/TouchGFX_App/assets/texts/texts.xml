@@ -25,6 +25,12 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_KCY4" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">----</Translation>
+      </Text>
+      <Text Id="__SingleUse_TYIX" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Error: &lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_2IFY" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">----</Translation>
       </Text>

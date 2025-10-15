@@ -14,6 +14,7 @@ uint16_t Crank_Rest_Time = 5000; // 5 seconds
 uint8_t  Crank_Attempts = 0;
 uint8_t  Set_Crank_Attempts = 3;
 uint32_t slush_start_time = 0;
+const char* engine_error ="NO FAULTS";
 
 engine_state_t engine_state = STOPPED;
 engine_action_t engine_action = NO_ACTION;
@@ -26,6 +27,7 @@ void engine_app()
 	switch(engine_state){
 	case INITIALISATION :
 		engine_state = STOPPED;
+		engine_action = NO_ACTION;
 	break;
 	case STOPPED:
 		Stopped();
@@ -33,7 +35,7 @@ void engine_app()
 	case STANDBY:
 
 	break;
-	case CRANK:
+	case CRANKING:
 		Crank();
 	break;
 	case CRANK_REST:
@@ -64,7 +66,7 @@ void Stopped()
 	{
 		if(engine_action == START)
 		{
-			engine_state = CRANK;
+			engine_state = CRANKING;
 			Crank_Attempts = 0;
 			slush_start_time = HAL_GetTick();
 		}
@@ -146,7 +148,7 @@ void Crank_Rest()
 			}
 			else
 			{
-				engine_state = CRANK;
+				engine_state = CRANKING;
 				slush_start_time = HAL_GetTick();
 			}
 		}
@@ -209,10 +211,22 @@ void Standby()
 
 void Stop_Check()
 {
-	if((engine_action == STOP) && (engine_state >= CRANK && engine_state <= RUNNING))
+	if(frequency > 2000)
+	{
+		engine_action = STOP;
+		engine_error = "OVERSPEED";
+
+	}
+	else
+	{
+		engine_error = "NO FAULT";
+	}
+	if((engine_action == STOP) && (engine_state >= CRANKING && engine_state <= RUNNING))
 	{
 		engine_state = SPINDOWN;
 		slush_start_time = HAL_GetTick();
 	}
 	engine_action = NO_ACTION;
 }
+
+
