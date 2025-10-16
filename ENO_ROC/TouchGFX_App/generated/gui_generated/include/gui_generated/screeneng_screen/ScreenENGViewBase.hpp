@@ -57,12 +57,15 @@ protected:
     touchgfx::Button button3;
     touchgfx::TextArea textExit;
     touchgfx::TextArea textStop;
+    touchgfx::TextArea textStop_1;
     touchgfx::TextArea textStart;
     touchgfx::TextAreaWithOneWildcard textFrequency;
     touchgfx::TextAreaWithOneWildcard textFuel;
     touchgfx::TextAreaWithOneWildcard textCrank;
     touchgfx::TextAreaWithOneWildcard textCrankAttempts;
-    touchgfx::TextAreaWithOneWildcard textError;
+    touchgfx::TextAreaWithOneWildcard textFault;
+    touchgfx::TextAreaWithOneWildcard textLamp;
+    touchgfx::TextAreaWithOneWildcard textLamp_1;
     touchgfx::TextAreaWithOneWildcard textState;
     touchgfx::TextAreaWithOneWildcard textAction;
 
@@ -77,8 +80,12 @@ protected:
     touchgfx::Unicode::UnicodeChar textCrankBuffer[TEXTCRANK_SIZE];
     static const uint16_t TEXTCRANKATTEMPTS_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textCrankAttemptsBuffer[TEXTCRANKATTEMPTS_SIZE];
-    static const uint16_t TEXTERROR_SIZE = 30;
-    touchgfx::Unicode::UnicodeChar textErrorBuffer[TEXTERROR_SIZE];
+    static const uint16_t TEXTFAULT_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar textFaultBuffer[TEXTFAULT_SIZE];
+    static const uint16_t TEXTLAMP_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar textLampBuffer[TEXTLAMP_SIZE];
+    static const uint16_t TEXTLAMP_1_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar textLamp_1Buffer[TEXTLAMP_1_SIZE];
     static const uint16_t TEXTSTATE_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textStateBuffer[TEXTSTATE_SIZE];
     static const uint16_t TEXTACTION_SIZE = 15;

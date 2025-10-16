@@ -25,11 +25,26 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_1ZGZ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">----</Translation>
+      </Text>
+      <Text Id="__SingleUse_4JJU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Fault Count: &lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_U52O" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">ACK</Translation>
+      </Text>
+      <Text Id="__SingleUse_YG7E" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">----</Translation>
+      </Text>
+      <Text Id="__SingleUse_QLN7" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Lamp: &lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_KCY4" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">----</Translation>
       </Text>
       <Text Id="__SingleUse_TYIX" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Error: &lt;value&gt;</Translation>
+        <Translation Language="GB">Fault: &lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_2IFY" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">----</Translation>

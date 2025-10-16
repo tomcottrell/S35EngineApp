@@ -72,21 +72,14 @@ void Stopped()
 		}
 		engine_action = NO_ACTION;
 	}
-// Demo for if Crank Was from key switch and not a display
-//	if(frequency != 0)
-//	{
-//		engine_state = CRANK;
-//		slush_start_time = HAL_GetTick();
-//	}
 }
 // ============================================================================
 // Engine Crank State Function
 // ============================================================================
 void Crank()
 {
-	CRANK = 1; //CRANK
-	FUEL = 1; //FUEL
-	// Can add speed signal count as well
+	CRANK = 1;
+	FUEL = 1;
 	if(frequency > Crank_Disconnect)
 	{
 		CRANK = 0; //CRANK
@@ -108,25 +101,6 @@ void Crank()
 			slush_start_time = HAL_GetTick();
 		}
 	}
-// Demo for if Crank Was from key switch and not a display
-//	if(frequency < Crank_Disconnect)
-//	{
-//		slush_start_time = HAL_GetTick();
-//	if(frequency < 1)
-//		{
-//		engine_state = SPINDOWN;
-//		}
-//	}
-//	else
-//	{
-//		if((HAL_GetTick() - slush_start_time) >= 1000)  // 1s elapsed
-//		{
-//			engine_state = RUNNING;
-//		    slush_start_time = HAL_GetTick();  // Restart
-//		}
-//		//slush updates automatically
-//	}
-
 }
 // ============================================================================
 // Engine Crank Rest State Function
@@ -170,18 +144,6 @@ void Running()
 		engine_state = SPINDOWN;
 		slush_start_time = HAL_GetTick();
 	}
-//	if(frequency > Crank_Disconnect)
-//	{
-//		slush_start_time = HAL_GetTick();
-//	}
-//	else
-//	{
-//		if((HAL_GetTick() - slush_start_time) >= 2000)  // 2s elapsed
-//		{
-//			engine_state = SPINDOWN;
-//		    slush_start_time = HAL_GetTick();  // Restart
-//		}
-//	}
 }
 // ============================================================================
 // Engine Spindown State Function
@@ -217,6 +179,11 @@ void Stop_Check()
 		engine_error = "OVERSPEED";
 
 	}
+	else if(frequency < Crank_Disconnect)
+	{
+		engine_action = STOP;
+		engine_error = "UNDERSPEED";
+	}
 	else
 	{
 		engine_error = "NO FAULT";
@@ -228,5 +195,3 @@ void Stop_Check()
 	}
 	engine_action = NO_ACTION;
 }
-
-

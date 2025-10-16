@@ -1,8 +1,8 @@
 #include <gui/screeneng_screen/ScreenENGView.hpp>
 #include "Engine_App.h"
+#include "Fault_Handling.h"
 
 extern uint16_t frequency;
-
 
 ScreenENGView::ScreenENGView():
 		buttonHandlerObj(10, 	static_cast<Button*>(&button0),
@@ -68,7 +68,11 @@ void ScreenENGView::handleTickEvent()
 	Unicode::snprintf(textFuelBuffer,TEXTFUEL_SIZE, "%d", FUEL);
 	Unicode::snprintf(textCrankBuffer,TEXTCRANK_SIZE, "%d", CRANK);
 	Unicode::snprintf(textCrankAttemptsBuffer,TEXTCRANKATTEMPTS_SIZE, "%d", Crank_Attempts);
-	Unicode::strncpy(textErrorBuffer, engine_error, TEXTERROR_SIZE);
+	//Unicode::strncpy(textErrorBuffer, engine_error, TEXTERROR_SIZE);
+	Unicode::snprintf(textFaultBuffer,TEXTFAULT_SIZE, "%d", fault_array[0].error_code);
+	Unicode::snprintf(textLampBuffer,TEXTLAMP_SIZE, "%d", fault_array[0].lamp);
+	Unicode::snprintf(textLampBuffer,TEXTLAMP_SIZE, "%d", fault_count);
+
 
 	if(++loop_count > 19)
 		{

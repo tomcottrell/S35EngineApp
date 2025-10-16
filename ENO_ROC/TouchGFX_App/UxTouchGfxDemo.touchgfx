@@ -2231,6 +2231,17 @@
           },
           {
             "Type": "TextArea",
+            "Name": "textStop_1",
+            "X": 104,
+            "Y": 219,
+            "Width": 33,
+            "Height": 19,
+            "TextId": "__SingleUse_U52O",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
             "Name": "textStart",
             "X": 254,
             "Y": 219,
@@ -2298,7 +2309,7 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textError",
+            "Name": "textFault",
             "Y": 150,
             "Width": 320,
             "Height": 25,
@@ -2306,6 +2317,34 @@
             "TextRotation": "0",
             "Wildcard1": {
               "TextId": "__SingleUse_KCY4",
+              "UseBuffer": true,
+              "BufferSize": 30
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLamp",
+            "Y": 175,
+            "Width": 320,
+            "Height": 25,
+            "TextId": "__SingleUse_QLN7",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_YG7E",
+              "UseBuffer": true,
+              "BufferSize": 30
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textLamp_1",
+            "Y": 195,
+            "Width": 320,
+            "Height": 25,
+            "TextId": "__SingleUse_4JJU",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_1ZGZ",
               "UseBuffer": true,
               "BufferSize": 30
             }

@@ -44,6 +44,12 @@ ScreenENGViewBase::ScreenENGViewBase()
     textStop.setTypedText(touchgfx::TypedText(T___SINGLEUSE_VR2H));
     add(textStop);
 
+    textStop_1.setXY(104, 219);
+    textStop_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textStop_1.setLinespacing(0);
+    textStop_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_U52O));
+    add(textStop_1);
+
     textStart.setXY(254, 219);
     textStart.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textStart.setLinespacing(0);
@@ -82,13 +88,29 @@ ScreenENGViewBase::ScreenENGViewBase()
     textCrankAttempts.setTypedText(touchgfx::TypedText(T___SINGLEUSE_GZ6Z));
     add(textCrankAttempts);
 
-    textError.setPosition(0, 150, 320, 25);
-    textError.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textError.setLinespacing(0);
-    Unicode::snprintf(textErrorBuffer, TEXTERROR_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KCY4).getText());
-    textError.setWildcard(textErrorBuffer);
-    textError.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TYIX));
-    add(textError);
+    textFault.setPosition(0, 150, 320, 25);
+    textFault.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textFault.setLinespacing(0);
+    Unicode::snprintf(textFaultBuffer, TEXTFAULT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_KCY4).getText());
+    textFault.setWildcard(textFaultBuffer);
+    textFault.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TYIX));
+    add(textFault);
+
+    textLamp.setPosition(0, 175, 320, 25);
+    textLamp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textLamp.setLinespacing(0);
+    Unicode::snprintf(textLampBuffer, TEXTLAMP_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_YG7E).getText());
+    textLamp.setWildcard(textLampBuffer);
+    textLamp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QLN7));
+    add(textLamp);
+
+    textLamp_1.setPosition(0, 195, 320, 25);
+    textLamp_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textLamp_1.setLinespacing(0);
+    Unicode::snprintf(textLamp_1Buffer, TEXTLAMP_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1ZGZ).getText());
+    textLamp_1.setWildcard(textLamp_1Buffer);
+    textLamp_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4JJU));
+    add(textLamp_1);
 
     textState.setPosition(0, 25, 292, 26);
     textState.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
