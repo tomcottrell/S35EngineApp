@@ -71,7 +71,7 @@ void ScreenENGView::handleTickEvent()
 	//Unicode::strncpy(textErrorBuffer, engine_error, TEXTERROR_SIZE);
 	Unicode::snprintf(textFaultBuffer,TEXTFAULT_SIZE, "%d", fault_array[0].error_code);
 	Unicode::snprintf(textLampBuffer,TEXTLAMP_SIZE, "%d", fault_array[0].lamp);
-	Unicode::snprintf(textLampBuffer,TEXTLAMP_SIZE, "%d", fault_count);
+	Unicode::snprintf(textCountBuffer,TEXTCOUNT_SIZE, "%d", fault_count);
 
 
 	if(++loop_count > 19)
@@ -116,4 +116,9 @@ void ScreenENGView::Start()
 void ScreenENGView::Stop()
 {
 	engine_action = STOP;
+}
+
+void ScreenENGView::ack_DM()
+{
+	ack_DM();
 }

@@ -3,6 +3,7 @@
 #include "Engine_App.h"
 #include "main.h"
 #include "frequency.h"
+#include "Fault_Handling.h"
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
@@ -50,6 +51,7 @@ void engine_app()
 	// Add the default case if no option is set
 	}
 	//add stop checks function
+	Fault_Handling();
 	Stop_Check();
 }
 // ============================================================================
@@ -173,21 +175,21 @@ void Standby()
 
 void Stop_Check()
 {
-	if(frequency > 2000)
-	{
-		engine_action = STOP;
-		engine_error = "OVERSPEED";
-
-	}
-	else if(frequency < Crank_Disconnect)
-	{
-		engine_action = STOP;
-		engine_error = "UNDERSPEED";
-	}
-	else
-	{
-		engine_error = "NO FAULT";
-	}
+	//if(frequency > 2000)
+	//{
+	//	engine_action = STOP;
+	//	engine_error = "OVERSPEED";
+	//
+	//}
+	//else if(frequency < Crank_Disconnect)
+	//{
+	//	engine_action = STOP;
+	//	engine_error = "UNDERSPEED";
+	//}
+	//else
+	//{
+	//	engine_error = "NO FAULT";
+	//}
 	if((engine_action == STOP) && (engine_state >= CRANKING && engine_state <= RUNNING))
 	{
 		engine_state = SPINDOWN;

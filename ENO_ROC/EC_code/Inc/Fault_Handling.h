@@ -31,7 +31,7 @@ typedef struct {
 extern fault_t fault_array[MAX_FAULTS];
 extern uint8_t fault_count;
 
-void Fault_Handling(void);
+extern void Fault_Handling(void);
 void Raise_DM(uint8_t lamp, uint8_t error_code);
 extern void ack_DM(void);
 

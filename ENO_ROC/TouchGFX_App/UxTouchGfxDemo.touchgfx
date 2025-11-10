@@ -2337,8 +2337,8 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textLamp_1",
-            "Y": 195,
+            "Name": "textCount",
+            "Y": 194,
             "Width": 320,
             "Height": 25,
             "TextId": "__SingleUse_4JJU",
@@ -2409,6 +2409,17 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "Start"
+            }
+          },
+          {
+            "InteractionName": "ACK",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ack_DM"
             }
           }
         ],

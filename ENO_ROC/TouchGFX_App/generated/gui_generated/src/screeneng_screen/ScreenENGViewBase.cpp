@@ -104,13 +104,13 @@ ScreenENGViewBase::ScreenENGViewBase()
     textLamp.setTypedText(touchgfx::TypedText(T___SINGLEUSE_QLN7));
     add(textLamp);
 
-    textLamp_1.setPosition(0, 195, 320, 25);
-    textLamp_1.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textLamp_1.setLinespacing(0);
-    Unicode::snprintf(textLamp_1Buffer, TEXTLAMP_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1ZGZ).getText());
-    textLamp_1.setWildcard(textLamp_1Buffer);
-    textLamp_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4JJU));
-    add(textLamp_1);
+    textCount.setPosition(0, 194, 320, 25);
+    textCount.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textCount.setLinespacing(0);
+    Unicode::snprintf(textCountBuffer, TEXTCOUNT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_1ZGZ).getText());
+    textCount.setWildcard(textCountBuffer);
+    textCount.setTypedText(touchgfx::TypedText(T___SINGLEUSE_4JJU));
+    add(textCount);
 
     textState.setPosition(0, 25, 292, 26);
     textState.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
@@ -165,6 +165,15 @@ void ScreenENGViewBase::handleKeyEvent(uint8_t key)
         //When hardware button 3 clicked call virtual function
         //Call Start
         Start();
+    
+    }
+
+    if(1 == key)
+    {
+        //ACK
+        //When hardware button 1 clicked call virtual function
+        //Call ack_DM
+        ack_DM();
     
     }
 }

@@ -16,6 +16,7 @@ public:
     virtual void handleTickEvent();
     virtual void Start();
     virtual void Stop();
+    virtual void ack_DM();
     const char* engine_state_to_string();
     const char* engine_action_to_string();
 

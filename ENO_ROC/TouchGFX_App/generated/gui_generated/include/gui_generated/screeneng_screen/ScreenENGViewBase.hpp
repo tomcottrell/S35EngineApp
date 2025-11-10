@@ -40,6 +40,10 @@ public:
     {
         // Override and implement this function in ScreenENG
     }
+    virtual void ack_DM()
+    {
+        // Override and implement this function in ScreenENG
+    }
 
 protected:
     FrontendApplication& application() {
@@ -65,7 +69,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard textCrankAttempts;
     touchgfx::TextAreaWithOneWildcard textFault;
     touchgfx::TextAreaWithOneWildcard textLamp;
-    touchgfx::TextAreaWithOneWildcard textLamp_1;
+    touchgfx::TextAreaWithOneWildcard textCount;
     touchgfx::TextAreaWithOneWildcard textState;
     touchgfx::TextAreaWithOneWildcard textAction;
 
@@ -84,8 +88,8 @@ protected:
     touchgfx::Unicode::UnicodeChar textFaultBuffer[TEXTFAULT_SIZE];
     static const uint16_t TEXTLAMP_SIZE = 30;
     touchgfx::Unicode::UnicodeChar textLampBuffer[TEXTLAMP_SIZE];
-    static const uint16_t TEXTLAMP_1_SIZE = 30;
-    touchgfx::Unicode::UnicodeChar textLamp_1Buffer[TEXTLAMP_1_SIZE];
+    static const uint16_t TEXTCOUNT_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar textCountBuffer[TEXTCOUNT_SIZE];
     static const uint16_t TEXTSTATE_SIZE = 15;
     touchgfx::Unicode::UnicodeChar textStateBuffer[TEXTSTATE_SIZE];
     static const uint16_t TEXTACTION_SIZE = 15;
