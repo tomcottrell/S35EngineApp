@@ -40,7 +40,7 @@ public:
     {
         // Override and implement this function in ScreenENG
     }
-    virtual void ack_DM()
+    virtual void ack_DM1()
     {
         // Override and implement this function in ScreenENG
     }

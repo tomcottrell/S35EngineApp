@@ -172,8 +172,8 @@ void ScreenENGViewBase::handleKeyEvent(uint8_t key)
     {
         //ACK
         //When hardware button 1 clicked call virtual function
-        //Call ack_DM
-        ack_DM();
+        //Call ack_DM1
+        ack_DM1();
     
     }
 }

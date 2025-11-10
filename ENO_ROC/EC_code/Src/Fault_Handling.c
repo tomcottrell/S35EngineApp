@@ -45,6 +45,8 @@ void Raise_DM(uint8_t lamp, uint8_t error_code)
 void ack_DM()
 {
 	uint8_t error_code = 0;
+	if (fault_count == 0) return;  // Guard against empty array
+
 	error_code =  fault_array[0].error_code;
 	// Pop - Remove a specific fault when acknowledged
 	for (uint8_t i = 0; i < fault_count; i++) {

@@ -118,7 +118,7 @@ void ScreenENGView::Stop()
 	engine_action = STOP;
 }
 
-void ScreenENGView::ack_DM()
+void ScreenENGView::ack_DM1()
 {
-	ack_DM();
+	ack_DM(); //Calls the C function from Fault_Handling.c
 }
