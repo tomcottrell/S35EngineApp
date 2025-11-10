@@ -69,8 +69,8 @@ void ScreenENGView::handleTickEvent()
 	Unicode::snprintf(textCrankBuffer,TEXTCRANK_SIZE, "%d", CRANK);
 	Unicode::snprintf(textCrankAttemptsBuffer,TEXTCRANKATTEMPTS_SIZE, "%d", Crank_Attempts);
 	//Unicode::strncpy(textErrorBuffer, engine_error, TEXTERROR_SIZE);
-	Unicode::snprintf(textFaultBuffer,TEXTFAULT_SIZE, "%d", fault_array[0].error_code);
-	Unicode::snprintf(textLampBuffer,TEXTLAMP_SIZE, "%d", fault_array[0].lamp);
+	Unicode::strncpy(textFaultBuffer, error_code_to_string(), TEXTFAULT_SIZE);
+	Unicode::strncpy(textLampBuffer, lamp_to_string(), TEXTLAMP_SIZE);
 	Unicode::snprintf(textCountBuffer,TEXTCOUNT_SIZE, "%d", fault_count);
 
 
@@ -104,6 +104,29 @@ const char* ScreenENGView::engine_action_to_string()
         case STOP: return "STOP";
         case EMERGENCY_STOP: return "EMERGENCY_STOP";
         case NO_ACTION: return "NO_ACTION";
+        default: return "UNKNOWN";
+    }
+}
+
+const char* ScreenENGView::lamp_to_string()
+{
+    switch(fault_array[0].lamp)
+    {
+        case 0: return "NO_FAULT";
+        case 1: return "ALERT";
+        case 2: return "WARNING";
+        case 3: return "SHUTDOWN";
+        default: return "UNKNOWN";
+    }
+}
+
+const char* ScreenENGView::error_code_to_string()
+{
+    switch(fault_array[0].error_code)
+    {
+        case 0: return "EMPTY";
+        case 1: return "OVERSPEED";
+        case 2: return "UNDERSPEED";
         default: return "UNKNOWN";
     }
 }

@@ -19,6 +19,8 @@ public:
     virtual void ack_DM1();
     const char* engine_state_to_string();
     const char* engine_action_to_string();
+    const char* lamp_to_string();
+    const char* error_code_to_string();
 
 protected:
     ButtonHandler buttonHandlerObj;
