@@ -1,6 +1,10 @@
 #ifndef Fault_Handling_H
 #define Fault_Handling_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -34,6 +38,10 @@ extern uint8_t fault_count;
 extern void Fault_Handling(void);
 void Raise_DM(uint8_t lamp, uint8_t error_code);
 extern void ack_DM(void);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 
