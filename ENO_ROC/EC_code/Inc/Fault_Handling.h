@@ -22,6 +22,7 @@ typedef enum {
     EMPTY,			//0
     OVERSPEED,		//1
     UNDERSPEED,		//2
+	OVERCURRENT,	//3
 } error_t;
 
 

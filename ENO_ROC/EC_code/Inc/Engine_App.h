@@ -27,8 +27,8 @@ typedef enum {
 extern engine_state_t engine_state;
 extern engine_action_t engine_action;
 extern uint8_t  Crank_Attempts;
-extern uint8_t CRANK;
-extern uint8_t FUEL;
+extern bool CRANK;
+extern bool FUEL;
 extern const char* engine_error;
 
 // Function declarations

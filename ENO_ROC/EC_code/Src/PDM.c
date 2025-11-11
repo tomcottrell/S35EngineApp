@@ -22,6 +22,7 @@ pdm_state_t pdm_state = PDM_STATE_CONFIGURING;
 //private variables
 static uint32_t pdm_last_command_time = 0;
 static uint8_t command_flag  = 0;
+bool pdm_fault_flag = 0;
 
 //PDM Input Data
 uint16_t pdm_analog_inputs[8] = {0};
@@ -233,18 +234,18 @@ uint8_t pdm_output_enable[12] = {
 // Define output on start up
 // ============================================================================
 uint8_t pdm_output_commands[12] = {
-	OUTPUT_OFF,    		// Output 1
-	OUTPUT_OFF,    		// Output 2
-	OUTPUT_100_PERCENT, // Output 3
-	OUTPUT_OFF,    		// Output 4
-	OUTPUT_OFF,    		// Output 5
-	OUTPUT_OFF,    		// Output 6
-	OUTPUT_50_PERCENT,  // Output 7
-	OUTPUT_OFF,    		// Output 8
-	OUTPUT_OFF,    		// Output 9
-	OUTPUT_OFF,    		// Output 10
-	OUTPUT_75_PERCENT,  // Output 11
-	OUTPUT_OFF     		// Output 12
+	OUTPUT_100_PERCENT,    		// Output 1
+	OUTPUT_100_PERCENT,    		// Output 2
+	OUTPUT_100_PERCENT, 		// Output 3
+	OUTPUT_100_PERCENT,    		// Output 4
+	OUTPUT_100_PERCENT,    		// Output 5
+	OUTPUT_100_PERCENT,    		// Output 6
+	OUTPUT_100_PERCENT,  		// Output 7
+	OUTPUT_100_PERCENT,    		// Output 8
+	OUTPUT_100_PERCENT,    		// Output 9
+	OUTPUT_100_PERCENT,    		// Output 10
+	OUTPUT_100_PERCENT,  		// Output 11
+	OUTPUT_100_PERCENT			// Output 12
 };
 // ============================================================================
 // Helper Macros for Bit Manipulation
@@ -765,7 +766,8 @@ void Fault_Handler(uint8_t diag,uint8_t output)
 {
 	if(diag == 2)
 	{
-		pdm_output_commands[output] = 0;
+		//pdm_output_commands[output] = 0;
 		pdm_output_enable[output] = 0;
+		pdm_fault_flag = 1;
 	}
 }

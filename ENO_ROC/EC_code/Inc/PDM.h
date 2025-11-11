@@ -32,7 +32,7 @@ extern uint8_t pdm_sensor_supply_voltage;
 extern uint16_t pdm_software_version;
 extern uint8_t pdm_output_commands[12];
 extern uint8_t pdm_output_enable[12];
-
+extern bool pdm_fault_flag;
 
 
 // Function declarations

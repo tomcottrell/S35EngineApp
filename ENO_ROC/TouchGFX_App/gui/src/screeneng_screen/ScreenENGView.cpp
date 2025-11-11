@@ -127,6 +127,7 @@ const char* ScreenENGView::error_code_to_string()
         case 0: return "EMPTY";
         case 1: return "OVERSPEED";
         case 2: return "UNDERSPEED";
+        case 3: return "OVERCURRENT";
         default: return "UNKNOWN";
     }
 }

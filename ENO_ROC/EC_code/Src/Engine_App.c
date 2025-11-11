@@ -20,8 +20,8 @@ const char* engine_error ="NO FAULTS";
 engine_state_t engine_state = STOPPED;
 engine_action_t engine_action = NO_ACTION;
 
-uint8_t CRANK = 0;
-uint8_t FUEL = 0;
+bool CRANK;
+bool FUEL;
 
 void engine_app()
 {
@@ -80,8 +80,8 @@ void Stopped()
 // ============================================================================
 void Crank()
 {
-	CRANK = 127;
-	FUEL = 127;
+	CRANK = 1;
+	FUEL = 1;
 	if(frequency > Crank_Disconnect)
 	{
 		CRANK = 0; //CRANK

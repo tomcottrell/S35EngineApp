@@ -12,6 +12,7 @@
 #define EMPTY 0
 #define OVERSPEED 1
 #define UNDERSPEED 2
+#define OVERCURRENT 3
 
 #define MAX_FAULTS 20
 
@@ -19,29 +20,29 @@ fault_t fault_array[MAX_FAULTS];
 uint8_t fault_count = 0;
 static uint32_t Underspeed_Bubble = 0;
 static bool Underspeed_Triggered = false;
-//static uint32_t Overspeed_Bubble = 0;
-//static bool Overspeed_Triggered = false;
+static uint32_t Overspeed_Bubble = 0;
+static bool Overspeed_Triggered = false;
 
 void Fault_Handling()
 {
 	// OVERSPEED
 	if(frequency > 2500 && (engine_state == RUNNING))
 	{
-		//if(!Overspeed_Triggered)
-		//{
-		//	Overspeed_Bubble = HAL_GetTick();
-		//	Overspeed_Triggered = true;
-		//}
-		//else if(HAL_GetTick() - Overspeed_Bubble > 1000){ //1 second
+		if(!Overspeed_Triggered)
+		{
+			Overspeed_Bubble = HAL_GetTick();
+			Overspeed_Triggered = true;
+		}
+		else if(HAL_GetTick() - Overspeed_Bubble > 100){ //1 second
 			engine_action = STOP;
 			Raise_DM(SHUTDOWN,OVERSPEED);
-		//	Overspeed_Bubble = 0;
-		//}
+			Overspeed_Bubble = 0;
+		}
 	}
-	//else
-	//{
-	//	Overspeed_Triggered = false;
-	//}
+	else
+	{
+		Overspeed_Triggered = false;
+	}
 
 	// UNDERSPEED
 	if(frequency < 500 && (engine_state == RUNNING))
@@ -61,6 +62,12 @@ void Fault_Handling()
 	else
 	{
 		Underspeed_Triggered = false;
+	}
+	if(pdm_fault_flag == 1 && ((engine_state == RUNNING) ||(engine_state == CRANKING)))
+	{
+		pdm_fault_flag = 0;
+		engine_action = STOP;
+		Raise_DM(SHUTDOWN,OVERCURRENT);
 	}
 }
 
