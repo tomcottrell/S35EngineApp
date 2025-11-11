@@ -1669,10 +1669,10 @@
           {
             "Type": "TextArea",
             "Name": "textExit1",
-            "X": 174,
-            "Y": 203,
-            "Width": 58,
-            "Height": 38,
+            "X": 165,
+            "Y": 219,
+            "Width": 71,
+            "Height": 19,
             "TextId": "__SingleUse_IC2P",
             "TextRotation": "0",
             "AutoSize": true
@@ -1702,8 +1702,7 @@
           {
             "Type": "TextArea",
             "Name": "textAreaPDMStatus",
-            "X": 135,
-            "Y": 1,
+            "X": 137,
             "Width": 165,
             "Height": 24,
             "TextId": "__SingleUse_0JXN",
@@ -1718,7 +1717,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI1",
             "X": 2,
-            "Y": 24,
+            "Y": 35,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_UNEI",
@@ -1732,10 +1731,10 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textAreaDO1",
-            "X": 80,
-            "Y": 24,
-            "Width": 127,
+            "Name": "textAreaDO3a",
+            "X": 241,
+            "Y": 128,
+            "Width": 41,
             "Height": 19,
             "TextId": "__SingleUse_3YE0",
             "TextRotation": "0",
@@ -1745,7 +1744,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI5",
             "X": 2,
-            "Y": 84,
+            "Y": 95,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_1SFV",
@@ -1761,7 +1760,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI9",
             "X": 2,
-            "Y": 141,
+            "Y": 152,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_LTJL",
@@ -1776,8 +1775,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI1",
-            "X": 232,
-            "Y": 26,
+            "X": 236,
+            "Y": 6,
             "Width": 82,
             "Height": 17,
             "TextId": "__SingleUse_CYLP",
@@ -1791,8 +1790,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI2",
-            "X": 232,
-            "Y": 46,
+            "X": 236,
+            "Y": 20,
             "Width": 82,
             "Height": 20,
             "TextId": "__SingleUse_GMRK",
@@ -1806,8 +1805,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI3",
-            "X": 232,
-            "Y": 66,
+            "X": 236,
+            "Y": 34,
             "Width": 82,
             "Height": 18,
             "TextId": "__SingleUse_OHWG",
@@ -1821,8 +1820,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI4",
-            "X": 232,
-            "Y": 86,
+            "X": 236,
+            "Y": 47,
             "Width": 82,
             "Height": 21,
             "TextId": "__SingleUse_8N85",
@@ -1836,8 +1835,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI5",
-            "X": 232,
-            "Y": 107,
+            "X": 236,
+            "Y": 61,
             "Width": 82,
             "Height": 19,
             "TextId": "__SingleUse_UUS5",
@@ -1851,8 +1850,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI6",
-            "X": 232,
-            "Y": 129,
+            "X": 236,
+            "Y": 75,
             "Width": 82,
             "Height": 21,
             "TextId": "__SingleUse_UMK4",
@@ -1866,8 +1865,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI7",
-            "X": 232,
-            "Y": 151,
+            "X": 236,
+            "Y": 89,
             "Width": 82,
             "Height": 19,
             "TextId": "__SingleUse_NXOS",
@@ -1881,8 +1880,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaAI8",
-            "X": 232,
-            "Y": 173,
+            "X": 236,
+            "Y": 102,
             "Width": 82,
             "Height": 20,
             "TextId": "__SingleUse_0BEX",
@@ -1897,7 +1896,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI2",
             "X": 2,
-            "Y": 39,
+            "Y": 50,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_6V9N",
@@ -1913,7 +1912,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI6",
             "X": 2,
-            "Y": 98,
+            "Y": 109,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_128J",
@@ -1928,10 +1927,10 @@
           {
             "Type": "TextArea",
             "Name": "textAreaD03Curr",
-            "X": 81,
-            "Y": 55,
+            "X": 241,
+            "Y": 162,
             "Width": 165,
-            "Height": 20,
+            "Height": 17,
             "TextId": "__SingleUse_9BLI",
             "TextRotation": "0",
             "Wildcard1": {
@@ -1943,8 +1942,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaD03Value",
-            "X": 81,
-            "Y": 40,
+            "X": 241,
+            "Y": 146,
             "Width": 165,
             "Height": 16,
             "TextId": "__SingleUse_TSXP",
@@ -1958,8 +1957,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaD03Diag",
-            "X": 80,
-            "Y": 71,
+            "X": 241,
+            "Y": 179,
             "Width": 166,
             "Height": 22,
             "TextId": "__SingleUse_AU5E",
@@ -1973,8 +1972,8 @@
           {
             "Type": "TextArea",
             "Name": "textAreaD03Enable",
-            "X": 80,
-            "Y": 89,
+            "X": 240,
+            "Y": 196,
             "Width": 166,
             "Height": 22,
             "TextId": "__SingleUse_JX47",
@@ -1989,7 +1988,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI10",
             "X": 2,
-            "Y": 156,
+            "Y": 167,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_5MN1",
@@ -2005,7 +2004,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI3",
             "X": 2,
-            "Y": 54,
+            "Y": 65,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_CJCT",
@@ -2021,7 +2020,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI7",
             "X": 2,
-            "Y": 112,
+            "Y": 123,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_W0CN",
@@ -2037,7 +2036,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI11",
             "X": 2,
-            "Y": 170,
+            "Y": 181,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_T4VQ",
@@ -2053,7 +2052,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI4",
             "X": 2,
-            "Y": 69,
+            "Y": 80,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_CG5I",
@@ -2069,7 +2068,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI8",
             "X": 2,
-            "Y": 126,
+            "Y": 137,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_I7B8",
@@ -2085,7 +2084,7 @@
             "Type": "TextArea",
             "Name": "textAreaDI12",
             "X": 2,
-            "Y": 184,
+            "Y": 195,
             "Width": 74,
             "Height": 19,
             "TextId": "__SingleUse_TLF3",
@@ -2095,6 +2094,593 @@
               "TextId": "__SingleUse_V0YE",
               "UseBuffer": true,
               "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO1",
+            "X": 76,
+            "Y": 35,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_GW8Q",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_MZMY",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO5",
+            "X": 76,
+            "Y": 95,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_6XG4",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_D84C",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO9",
+            "X": 76,
+            "Y": 155,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_59OZ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_HVYG",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO2",
+            "X": 76,
+            "Y": 50,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_P0HD",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LSDL",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO6",
+            "X": 76,
+            "Y": 110,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_X8BB",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_P0BZ",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO10",
+            "X": 76,
+            "Y": 170,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_DDNJ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_I9HX",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO3",
+            "X": 76,
+            "Y": 65,
+            "Width": 94,
+            "Height": 19,
+            "TextId": "__SingleUse_2BVC",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_U3SD",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO7",
+            "X": 76,
+            "Y": 125,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_19H7",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_HBD5",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO11",
+            "X": 76,
+            "Y": 185,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_2AGZ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_OAO2",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO4",
+            "X": 76,
+            "Y": 80,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_3KBD",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_LRKK",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO8",
+            "X": 76,
+            "Y": 140,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_H8DO",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5I1Q",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textAreaDO12",
+            "X": 76,
+            "Y": 200,
+            "Width": 100,
+            "Height": 19,
+            "TextId": "__SingleUse_O7TK",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_248P",
+              "UseBuffer": true,
+              "BufferSize": 20
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 59,
+            "Y": 23,
+            "Width": 152,
+            "Height": 12,
+            "TextId": "__SingleUse_6AH1",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag3",
+            "X": 171,
+            "Y": 65,
+            "Width": 53,
+            "Height": 19,
+            "TextId": "__SingleUse_ZEK2",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_494Y",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable3",
+            "X": 224,
+            "Y": 65,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_5UHP",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_BZM4",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag2",
+            "X": 171,
+            "Y": 50,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_CFGI",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5X7B",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable2",
+            "X": 224,
+            "Y": 50,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_FO8P",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_PXRI",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag1",
+            "X": 171,
+            "Y": 35,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_PZKZ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DV70",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable1",
+            "X": 224,
+            "Y": 35,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_347Y",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_UX5T",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag4",
+            "X": 171,
+            "Y": 80,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_VSHQ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DXGX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable4",
+            "X": 224,
+            "Y": 80,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_IIN0",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_6LHQ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag5",
+            "X": 171,
+            "Y": 95,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_8JZV",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_EJFV",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable5",
+            "X": 224,
+            "Y": 95,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_B8S8",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_S2BB",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag6",
+            "X": 171,
+            "Y": 110,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_5X1L",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_R94X",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable6",
+            "X": 224,
+            "Y": 110,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_6AA1",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_B3FK",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag7",
+            "X": 171,
+            "Y": 125,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_6VPJ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_XGHT",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable7",
+            "X": 224,
+            "Y": 125,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_YQDJ",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_4VXF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag8",
+            "X": 171,
+            "Y": 140,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_1071",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_JDIF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable8",
+            "X": 224,
+            "Y": 140,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_2O0J",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_DB3R",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag9",
+            "X": 171,
+            "Y": 155,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_2PDY",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_M75V",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable9",
+            "X": 224,
+            "Y": 155,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_56CY",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_YVVF",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag10",
+            "X": 171,
+            "Y": 170,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_P6G0",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_NZOT",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable10",
+            "X": 224,
+            "Y": 170,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_U14X",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5K7X",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag11",
+            "X": 171,
+            "Y": 185,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_NH85",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_ZLUR",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable11",
+            "X": 224,
+            "Y": 185,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_35H0",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_WQK8",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "diag12",
+            "X": 171,
+            "Y": 199,
+            "Width": 42,
+            "Height": 19,
+            "TextId": "__SingleUse_CZQV",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_O5D1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Enable12",
+            "X": 224,
+            "Y": 199,
+            "Width": 10,
+            "Height": 19,
+            "TextId": "__SingleUse_XY5Q",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_AMYW",
+              "UseBuffer": true,
+              "BufferSize": 10
             }
           }
         ],

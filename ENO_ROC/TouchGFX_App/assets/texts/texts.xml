@@ -25,6 +25,225 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_DV70" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_PZKZ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_UX5T" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_347Y" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_5X7B" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_CFGI" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_PXRI" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_FO8P" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_O5D1" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_CZQV" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_AMYW" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_XY5Q" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZLUR" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_NH85" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_WQK8" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_35H0" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_NZOT" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_P6G0" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_5K7X" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_U14X" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M75V" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_2PDY" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_YVVF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_56CY" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JDIF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_1071" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_DB3R" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_2O0J" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_XGHT" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_6VPJ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_4VXF" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_YQDJ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R94X" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_5X1L" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_B3FK" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_6AA1" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_EJFV" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_8JZV" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_S2BB" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_B8S8" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_DXGX" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.34</Translation>
+      </Text>
+      <Text Id="__SingleUse_VSHQ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_6LHQ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_IIN0" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_BZM4" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_5UHP" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_494Y" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">0.13A</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZEK2" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;,</Translation>
+      </Text>
+      <Text Id="__SingleUse_6AH1" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Value, Feedback, Enabled = 1</Translation>
+      </Text>
+      <Text Id="__SingleUse_MZMY" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO01 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_GW8Q" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_D84C" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO05 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_6XG4" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HVYG" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO09 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_59OZ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LSDL" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO02 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_P0HD" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_P0BZ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO06 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_X8BB" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_I9HX" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO10 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_DDNJ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_U3SD" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO03=100,</Translation>
+      </Text>
+      <Text Id="__SingleUse_2BVC" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_HBD5" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO07 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_19H7" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_OAO2" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO11 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_2AGZ" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LRKK" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO04 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_3KBD" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_5I1Q" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO08 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_H8DO" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_248P" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">DO12 = 127</Translation>
+      </Text>
+      <Text Id="__SingleUse_O7TK" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_1ZGZ" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">----</Translation>
       </Text>
@@ -95,31 +314,31 @@
         <Translation Language="GB">ENG</Translation>
       </Text>
       <Text Id="__SingleUse_9VD9" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Enable/Disable 0</Translation>
+        <Translation Language="GB">ON/OFF 0</Translation>
       </Text>
       <Text Id="__SingleUse_JX47" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_LPQ9" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Value 75%</Translation>
+        <Translation Language="GB">75%</Translation>
       </Text>
       <Text Id="__SingleUse_TSXP" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_VSNM" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Diagnostic 0</Translation>
+        <Translation Language="GB">Diag 0</Translation>
       </Text>
       <Text Id="__SingleUse_AU5E" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_TF6C" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Feedback 0.2A</Translation>
+        <Translation Language="GB">0.2A</Translation>
       </Text>
       <Text Id="__SingleUse_9BLI" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_3YE0" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Digital Output 3</Translation>
+        <Translation Language="GB">DO 3</Translation>
       </Text>
       <Text Id="__SingleUse_BQ2I" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">AI7 = 1</Translation>
@@ -137,7 +356,7 @@
         <Translation Language="GB">D011</Translation>
       </Text>
       <Text Id="__SingleUse_IC2P" Alignment="Left" TypographyId="Typography_00">
-        <Translation Language="GB">Disable&#10;D03</Translation>
+        <Translation Language="GB">CUT D03</Translation>
       </Text>
       <Text Id="__SingleUse_3O2W" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">D03</Translation>

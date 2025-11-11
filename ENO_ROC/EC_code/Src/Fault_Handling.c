@@ -19,29 +19,29 @@ fault_t fault_array[MAX_FAULTS];
 uint8_t fault_count = 0;
 static uint32_t Underspeed_Bubble = 0;
 static bool Underspeed_Triggered = false;
-static uint32_t Overspeed_Bubble = 0;
-static bool Overspeed_Triggered = false;
+//static uint32_t Overspeed_Bubble = 0;
+//static bool Overspeed_Triggered = false;
 
 void Fault_Handling()
 {
 	// OVERSPEED
-	if(frequency > 2000 && (engine_state == RUNNING))
+	if(frequency > 2500 && (engine_state == RUNNING))
 	{
-		if(!Overspeed_Triggered)
-		{
-			Overspeed_Bubble = HAL_GetTick();
-			Overspeed_Triggered = true;
-		}
-		else if(HAL_GetTick() - Overspeed_Bubble > 1000){ //1 second
+		//if(!Overspeed_Triggered)
+		//{
+		//	Overspeed_Bubble = HAL_GetTick();
+		//	Overspeed_Triggered = true;
+		//}
+		//else if(HAL_GetTick() - Overspeed_Bubble > 1000){ //1 second
 			engine_action = STOP;
 			Raise_DM(SHUTDOWN,OVERSPEED);
-			Overspeed_Bubble = 0;
-		}
+		//	Overspeed_Bubble = 0;
+		//}
 	}
-	else
-	{
-		Overspeed_Triggered = false;
-	}
+	//else
+	//{
+	//	Overspeed_Triggered = false;
+	//}
 
 	// UNDERSPEED
 	if(frequency < 500 && (engine_state == RUNNING))
@@ -67,12 +67,22 @@ void Fault_Handling()
 void Raise_DM(uint8_t lamp, uint8_t error_code)
 {
 	// Push - Add a fault to the array
-    if (fault_count < MAX_FAULTS) {
-        fault_array[fault_count].error_code = error_code;
-        fault_array[fault_count].lamp = lamp;
+	if(lamp == 0 && error_code == 0)
+	{
+		if (fault_count < MAX_FAULTS) {
+		        fault_array[fault_count].error_code = error_code;
+		        fault_array[fault_count].lamp = lamp;
+		}
+	}
+	else
+	{
+		if (fault_count < MAX_FAULTS) {
+			fault_array[fault_count].error_code = error_code;
+			fault_array[fault_count].lamp = lamp;
         //fault_array[fault_count].source = source;
-        fault_count++;
-    }
+			fault_count++;
+		}
+	}
 }
 
 //void ack_DM(uint8_t error_code) can do this way when we want to remove a specific dm

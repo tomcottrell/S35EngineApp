@@ -47,13 +47,13 @@ void IO_Mapping_Update()
 //pdm_output_commands[3]; //D04
 //pdm_output_commands[4]; //D05
 //pdm_output_commands[5]; //D06
-//pdm_output_commands[6]; //D07
+pdm_output_commands[6] = FUEL; //D07
 //pdm_output_commands[7]; //D08
-//pdm_output_commands[8]; //D09
-//pdm_output_commands[9]; //D010
-//pdm_output_commands[10]; //D011
+pdm_output_commands[8] = CRANK; //D09
+pdm_output_commands[9] = CRANK; //D010
+pdm_output_commands[10] = CRANK; //D011
 //pdm_output_commands[11]; //D012
-//
+
 // S35
 Output1_control = CRANK;
 Output2_control = FUEL;

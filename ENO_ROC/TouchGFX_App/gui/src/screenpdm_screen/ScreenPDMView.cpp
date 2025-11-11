@@ -82,12 +82,64 @@ void ScreenPDMView::updateDigitalOutputs()
     int do3Diagnostic = pdm_outputs[2].diagnostics;
 
     // Update the text areas
-    Unicode::snprintf(textAreaD03ValueBuffer, TEXTAREAD03VALUE_SIZE, "Value %d%%", do3Percentage);
+    Unicode::snprintf(textAreaD03ValueBuffer, TEXTAREAD03VALUE_SIZE, "Value: %d%%", do3Percentage);
 
-    Unicode::snprintfFloat(textAreaD03CurrBuffer, TEXTAREAD03CURR_SIZE, "Feedback %.2fA", do3Current);
+    Unicode::snprintfFloat(textAreaD03CurrBuffer, TEXTAREAD03CURR_SIZE, "%.2fA", do3Current);
 
-    Unicode::snprintf(textAreaD03DiagBuffer, TEXTAREAD03DIAG_SIZE, "Diagnostic %d", do3Diagnostic);
-    Unicode::snprintf(textAreaD03EnableBuffer, TEXTAREAD03ENABLE_SIZE, "Enable/Disable %d", do3Enable);
+    Unicode::snprintf(textAreaD03DiagBuffer, TEXTAREAD03DIAG_SIZE, "Diag %d", do3Diagnostic);
+    Unicode::snprintf(textAreaD03EnableBuffer, TEXTAREAD03ENABLE_SIZE, "ON/OFF %d", do3Enable);
+
+    //OUTPUT DIAGNOSTICS
+    //VALUES
+    Unicode::snprintf(textAreaDO1Buffer, TEXTAREADO1_SIZE, "DO01=%d%%,", (pdm_output_commands[0] * 100) / 127);
+    Unicode::snprintf(textAreaDO2Buffer, TEXTAREADO2_SIZE, "DO02=%d%%,", (pdm_output_commands[1] * 100) / 127);
+    Unicode::snprintf(textAreaDO3Buffer, TEXTAREADO3_SIZE, "DO03=%d%%,", (pdm_output_commands[2] * 100) / 127);
+    Unicode::snprintf(textAreaDO4Buffer, TEXTAREADO4_SIZE, "DO04=%d%%,", (pdm_output_commands[3] * 100) / 127);
+    Unicode::snprintf(textAreaDO5Buffer, TEXTAREADO5_SIZE, "DO05=%d%%,", (pdm_output_commands[4] * 100) / 127);
+    Unicode::snprintf(textAreaDO6Buffer, TEXTAREADO6_SIZE, "DO06=%d%%,", (pdm_output_commands[5] * 100) / 127);
+    Unicode::snprintf(textAreaDO7Buffer, TEXTAREADO7_SIZE, "DO07=%d%%,", (pdm_output_commands[6] * 100) / 127);
+    Unicode::snprintf(textAreaDO8Buffer, TEXTAREADO8_SIZE, "DO08=%d%%,", (pdm_output_commands[7] * 100) / 127);
+    Unicode::snprintf(textAreaDO9Buffer, TEXTAREADO9_SIZE, "DO09=%d%%,", (pdm_output_commands[8] * 100) / 127);
+    Unicode::snprintf(textAreaDO10Buffer, TEXTAREADO10_SIZE, "DO10=%d%%,", (pdm_output_commands[9] * 100) / 127);
+    Unicode::snprintf(textAreaDO11Buffer, TEXTAREADO11_SIZE, "DO11=%d%%,", (pdm_output_commands[10] * 100) / 127);
+    Unicode::snprintf(textAreaDO12Buffer, TEXTAREADO12_SIZE, "DO12=%d%%,", (pdm_output_commands[11] * 100) / 127);
+
+    //FEEDBACK AND ENABLED/DISABLED
+    Unicode::snprintfFloat(diag1Buffer, DIAG1_SIZE, "%.2fA", pdm_outputs[0].feedback * 0.125f);
+    Unicode::snprintf(Enable1Buffer, ENABLE1_SIZE, "%d", pdm_output_enable[0]);
+
+    Unicode::snprintfFloat(diag2Buffer, DIAG2_SIZE, "%.2fA", pdm_outputs[1].feedback * 0.125f);
+    Unicode::snprintf(Enable2Buffer, ENABLE2_SIZE, "%d", pdm_output_enable[1]);
+
+    Unicode::snprintfFloat(diag3Buffer, DIAG3_SIZE, "%.2fA", pdm_outputs[2].feedback * 0.125f);
+    Unicode::snprintf(Enable3Buffer, ENABLE3_SIZE, "%d", pdm_output_enable[2]);
+
+    Unicode::snprintfFloat(diag4Buffer, DIAG4_SIZE, "%.2fA", pdm_outputs[3].feedback * 0.125f);
+    Unicode::snprintf(Enable4Buffer, ENABLE4_SIZE, "%d", pdm_output_enable[3]);
+
+    Unicode::snprintfFloat(diag5Buffer, DIAG5_SIZE, "%.2fA", pdm_outputs[4].feedback * 0.125f);
+    Unicode::snprintf(Enable5Buffer, ENABLE5_SIZE, "%d", pdm_output_enable[4]);
+
+    Unicode::snprintfFloat(diag6Buffer, DIAG6_SIZE, "%.2fA", pdm_outputs[5].feedback * 0.125f);
+    Unicode::snprintf(Enable6Buffer, ENABLE6_SIZE, "%d", pdm_output_enable[5]);
+
+    Unicode::snprintfFloat(diag7Buffer, DIAG7_SIZE, "%.2fA", pdm_outputs[6].feedback * 0.125f);
+    Unicode::snprintf(Enable7Buffer, ENABLE7_SIZE, "%d", pdm_output_enable[6]);
+
+    Unicode::snprintfFloat(diag8Buffer, DIAG8_SIZE, "%.2fA", pdm_outputs[7].feedback * 0.125f);
+    Unicode::snprintf(Enable8Buffer, ENABLE8_SIZE, "%d", pdm_output_enable[7]);
+
+    Unicode::snprintfFloat(diag9Buffer, DIAG9_SIZE, "%.2fA", pdm_outputs[8].feedback * 0.125f);
+    Unicode::snprintf(Enable9Buffer, ENABLE9_SIZE, "%d", pdm_output_enable[8]);
+
+    Unicode::snprintfFloat(diag10Buffer, DIAG10_SIZE, "%.2fA", pdm_outputs[9].feedback * 0.125f);
+    Unicode::snprintf(Enable10Buffer, ENABLE10_SIZE, "%d", pdm_output_enable[9]);
+
+    Unicode::snprintfFloat(diag11Buffer, DIAG11_SIZE, "%.2fA", pdm_outputs[10].feedback * 0.125f);
+    Unicode::snprintf(Enable11Buffer, ENABLE11_SIZE, "%d", pdm_output_enable[10]);
+
+    Unicode::snprintfFloat(diag12Buffer, DIAG12_SIZE, "%.2fA", pdm_outputs[11].feedback * 0.125f);
+    Unicode::snprintf(Enable12Buffer, ENABLE12_SIZE, "%d", pdm_output_enable[11]);
 }
 
 void ScreenPDMView::updateDigitalInputs()
@@ -140,7 +192,7 @@ void ScreenPDMView::updateAnalogInputs()
 
     // AI5
     voltage = (pdm_analog_inputs[4] / 1023.0f) * 5.0f;
-    Unicode::snprintfFloat(textAreaAI5Buffer, TEXTAREAAI5_SIZE, "AI5%.2fV", voltage);
+    Unicode::snprintfFloat(textAreaAI5Buffer, TEXTAREAAI5_SIZE, "AI5 %.2fV", voltage);
 
     // AI6
     voltage = (pdm_analog_inputs[5] / 1023.0f) * 5.0f;

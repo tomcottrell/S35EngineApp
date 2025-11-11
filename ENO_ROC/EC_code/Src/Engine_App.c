@@ -80,8 +80,8 @@ void Stopped()
 // ============================================================================
 void Crank()
 {
-	CRANK = 1;
-	FUEL = 1;
+	CRANK = 127;
+	FUEL = 127;
 	if(frequency > Crank_Disconnect)
 	{
 		CRANK = 0; //CRANK
