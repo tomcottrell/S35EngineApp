@@ -169,6 +169,7 @@ void Spindown()
 		    slush_start_time = HAL_GetTick();  // Restart
 		}
 	}
+	engine_action = NO_ACTION;
 }
 
 void Standby()
@@ -198,5 +199,5 @@ void Stop_Check()
 		engine_state = SPINDOWN;
 		slush_start_time = HAL_GetTick();
 	}
-	engine_action = NO_ACTION;
+	//engine_action = NO_ACTION;
 }

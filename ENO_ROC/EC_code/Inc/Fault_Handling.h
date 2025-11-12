@@ -15,7 +15,7 @@ typedef enum {
     NO_FAULT,		//0
     ALERT,			//1
     WARNING,		//2
-	SHUTDONWN		//3
+	SHUTDOWN		//3
 } Lamp_t;
 
 typedef enum {
