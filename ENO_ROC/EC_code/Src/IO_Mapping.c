@@ -12,9 +12,9 @@ void IO_Mapping_Update()
 // INPUTS
 // ============================================================================
 // PDM
-//pdm_digital_inputs[0]; // DI1
-//pdm_digital_inputs[1]; // DI2
-//pdm_digital_inputs[2]; // DI3
+LOW_OIL_PRESSURE = pdm_digital_inputs[0]; 	// DI1
+HIGH_ENG_TEMP = pdm_digital_inputs[1]; 		// DI2
+EXTERNAL_SHUTDOWN = pdm_digital_inputs[2]; 	// DI3
 //pdm_digital_inputs[3]; // DI4
 //pdm_digital_inputs[4]; // DI5
 //pdm_digital_inputs[5]; // DI6

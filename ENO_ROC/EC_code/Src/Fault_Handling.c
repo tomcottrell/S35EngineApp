@@ -13,6 +13,10 @@
 #define OVERSPEED 1
 #define UNDERSPEED 2
 #define OVERCURRENT 3
+#define LOW_OIL_PRESS 4
+#define HIGH_TEMP 5
+#define EXT_SHDN 6
+
 
 #define MAX_FAULTS 20
 
@@ -63,11 +67,31 @@ void Fault_Handling()
 	{
 		Underspeed_Triggered = false;
 	}
+
+	//PDM OVER CURRENT ON ANY OUTPUT
 	if(pdm_fault_flag == 1 && ((engine_state == RUNNING) ||(engine_state == CRANKING)))
 	{
 		pdm_fault_flag = 0;
 		engine_action = STOP;
 		Raise_DM(SHUTDOWN,OVERCURRENT);
+	}
+	//LOW OIL PRESSURE
+	if(LOW_OIL_PRESSURE == 1 && (frequency > 1000))
+	{
+		engine_action = STOP;
+		Raise_DM(SHUTDOWN,LOW_OIL_PRESS);
+	}
+	//HIGH ENGINE TEMP
+	if(HIGH_ENG_TEMP == 1 && (engine_state > 1))
+	{
+		engine_action = STOP;
+		Raise_DM(SHUTDOWN,HIGH_TEMP);
+	}
+	//EXTERNAL SHUTDOWN
+	if(EXTERNAL_SHUTDOWN == 1 & (engine_state > 1))
+	{
+		engine_action = STOP;
+		Raise_DM(SHUTDOWN,EXT_SHDN);
 	}
 }
 

@@ -20,8 +20,11 @@ const char* engine_error ="NO FAULTS";
 engine_state_t engine_state = STOPPED;
 engine_action_t engine_action = NO_ACTION;
 
-bool CRANK;
-bool FUEL;
+bool CRANK = 0;
+bool FUEL = 0;
+bool LOW_OIL_PRESSURE = 0;
+bool HIGH_ENG_TEMP = 0;
+bool EXTERNAL_SHUTDOWN = 0;
 
 void engine_app()
 {

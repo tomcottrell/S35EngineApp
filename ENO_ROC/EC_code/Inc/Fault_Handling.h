@@ -23,6 +23,9 @@ typedef enum {
     OVERSPEED,		//1
     UNDERSPEED,		//2
 	OVERCURRENT,	//3
+	LOW_OIL_PRESS,	//4
+	HIGH_TEMP,		//5
+	EXT_SHDN,		//6
 } error_t;
 
 

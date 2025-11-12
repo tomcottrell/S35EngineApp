@@ -29,6 +29,9 @@ extern engine_action_t engine_action;
 extern uint8_t  Crank_Attempts;
 extern bool CRANK;
 extern bool FUEL;
+extern bool LOW_OIL_PRESSURE;
+extern bool HIGH_ENG_TEMP;
+extern bool EXTERNAL_SHUTDOWN;
 extern const char* engine_error;
 
 // Function declarations

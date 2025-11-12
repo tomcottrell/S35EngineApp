@@ -128,6 +128,9 @@ const char* ScreenENGView::error_code_to_string()
         case 1: return "OVERSPEED";
         case 2: return "UNDERSPEED";
         case 3: return "OVERCURRENT";
+        case 4: return "LOW OIL PRESSURE";
+        case 5: return "HIGH ENG TEMP";
+        case 6: return "EXT SHDN";
         default: return "UNKNOWN";
     }
 }
