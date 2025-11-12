@@ -37,7 +37,7 @@ void Fault_Handling()
 			Overspeed_Bubble = HAL_GetTick();
 			Overspeed_Triggered = true;
 		}
-		else if(HAL_GetTick() - Overspeed_Bubble > 100){ //1 second
+		else if(HAL_GetTick() - Overspeed_Bubble > 300){ //1 second
 			engine_action = STOP;
 			Raise_DM(SHUTDOWN,OVERSPEED);
 			Overspeed_Bubble = 0;
@@ -76,19 +76,19 @@ void Fault_Handling()
 		Raise_DM(SHUTDOWN,OVERCURRENT);
 	}
 	//LOW OIL PRESSURE
-	if(LOW_OIL_PRESSURE == 1 && (frequency > 1000))
+	if(LOW_OIL_PRESSURE == 1 && (frequency > 1000) && ((engine_state == RUNNING) ||(engine_state == CRANKING)))
 	{
 		engine_action = STOP;
 		Raise_DM(SHUTDOWN,LOW_OIL_PRESS);
 	}
 	//HIGH ENGINE TEMP
-	if(HIGH_ENG_TEMP == 1 && (engine_state > 1))
+	if(HIGH_ENG_TEMP == 1 && ((engine_state == RUNNING) ||(engine_state == CRANKING)))
 	{
 		engine_action = STOP;
 		Raise_DM(SHUTDOWN,HIGH_TEMP);
 	}
 	//EXTERNAL SHUTDOWN
-	if(EXTERNAL_SHUTDOWN == 1 & (engine_state > 1))
+	if(EXTERNAL_SHUTDOWN == 1  && ((engine_state == RUNNING) ||(engine_state == CRANKING)))
 	{
 		engine_action = STOP;
 		Raise_DM(SHUTDOWN,EXT_SHDN);
