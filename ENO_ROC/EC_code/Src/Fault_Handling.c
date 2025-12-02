@@ -30,7 +30,7 @@ static bool Overspeed_Triggered = false;
 void Fault_Handling()
 {
 	// OVERSPEED
-	if(frequency > 2500 && (engine_state == RUNNING))
+	if(frequency > 350 && (engine_state == RUNNING))
 	{
 		if(!Overspeed_Triggered)
 		{
@@ -49,7 +49,7 @@ void Fault_Handling()
 	}
 
 	// UNDERSPEED
-	if(frequency < 500 && (engine_state == RUNNING))
+	if(frequency < 100 && (engine_state == RUNNING))
 	{
 		if(!Underspeed_Triggered)
 		{

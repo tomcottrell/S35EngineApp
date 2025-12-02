@@ -54,18 +54,18 @@ EXTERNAL_SHUTDOWN = pdm_digital_inputs[2]; 	// DI3
 //pdm_output_commands[10] = CRANK; //D011
 //pdm_output_commands[11]; //D012
 
-pdm_output_enable[0] = 0;
-pdm_output_enable[1] = 0;
-//pdm_output_enable[2];
-pdm_output_enable[3] = 0;
-pdm_output_enable[4] = 0;
-pdm_output_enable[5] = 0;
-pdm_output_enable[6] = FUEL;
-pdm_output_enable[7] = 0;
-pdm_output_enable[8] = CRANK;
-pdm_output_enable[9]= CRANK;
-pdm_output_enable[10] = CRANK;
-pdm_output_enable[11] = 0;
+pdm_output_enable[0] = 0; 		//1
+pdm_output_enable[1] = 0; 		//2
+//pdm_output_enable[2]; 		//3
+pdm_output_enable[3] = 0; 		//4
+pdm_output_enable[4] = FUEL; 	//5
+pdm_output_enable[5] = 0; 		//6
+pdm_output_enable[6] = FUEL; 	//7
+pdm_output_enable[7] = CRANK; 	//8
+pdm_output_enable[8] = 0; 		//9
+pdm_output_enable[9]= CRANK; 	//10
+pdm_output_enable[10] = 0; 		//11
+pdm_output_enable[11] = CRANK; 	//12
 
 // S35
 Output1_control = CRANK;

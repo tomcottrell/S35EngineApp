@@ -8,7 +8,7 @@
 #include <stdint.h>
 #include <string.h>
 
-uint16_t Crank_Disconnect = 1000;
+uint16_t Crank_Disconnect = 200; //HZ FOR ICEPACK
 uint16_t Crank_Time = 10000; //10 seconds
 uint16_t Crank_Speed_Signal_Wait_Time = 5000; //5 seconds
 uint16_t Crank_Rest_Time = 5000; // 5 seconds
@@ -62,6 +62,8 @@ void engine_app()
 // ============================================================================
 void Stopped()
 {
+	CRANK = 0;
+	FUEL = 0;
 	if(frequency != 0)
 	{
 		engine_state = SPINDOWN;
@@ -84,7 +86,8 @@ void Stopped()
 void Crank()
 {
 	CRANK = 1;
-	FUEL = 1;
+	//FUEL = 1;
+	FUEL = 0; //ETS FOR ICEPACK
 	if(frequency > Crank_Disconnect)
 	{
 		CRANK = 0; //CRANK
@@ -156,14 +159,15 @@ void Running()
 void Spindown()
 {
 	CRANK = 0; //CRANK
-	FUEL = 0; //FUEL
+	//FUEL = 0; //FUEL
+	FUEL = 1; //ENERGISE TO STOP
 	if(frequency > 0)
 	{
 		slush_start_time = HAL_GetTick();
 	}
 	else
 	{
-		if((HAL_GetTick() - slush_start_time) >= 3000)  // 3s elapsed
+		if((HAL_GetTick() - slush_start_time) >= 5000)  // 3s elapsed
 		{
 			engine_state = STOPPED;
 		    slush_start_time = HAL_GetTick();  // Restart
